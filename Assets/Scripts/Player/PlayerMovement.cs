@@ -30,11 +30,9 @@ public class PlayerMovement : MonoBehaviour
 
          if (Input.GetButton("Sprint"))
         {
-            Debug.Log("Sprint");
             speed = 24f;
         } else
         {
-            Debug.Log("Walking");
             speed = 12f;
         }
  

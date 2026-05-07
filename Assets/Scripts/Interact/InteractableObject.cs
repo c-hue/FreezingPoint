@@ -4,10 +4,37 @@ using UnityEngine;
  
 public class InteractableObject : MonoBehaviour
 {
+    public bool playerInRange;
     public string ItemName;
  
     public string GetItemName()
     {
         return ItemName;
+    }
+
+    void Update()
+    {
+        // pick up item
+        if(Input.GetKeyDown(KeyCode.F) && playerInRange && SelectionManager.Instance.onTarget)
+        {
+            Debug.Log("item in inventory");
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange=true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange=false;
+        }
     }
 }

@@ -49,11 +49,15 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Art/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
+    <Compile Include="Assets/Simple Inventory System/Scripts/InventoryItemData.cs" />
     <Compile Include="Assets/Scripts/Interact/SelectionManager.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
+    <Compile Include="Assets/Simple Inventory System/Scripts/ItemDraggingManager.cs" />
+    <Compile Include="Assets/Simple Inventory System/Scripts/CardManager.cs" />
     <Compile Include="Assets/Scripts/Player/MouseMovement.cs" />
     <Compile Include="Assets/Scripts/Interact/InteractableObject.cs" />
-    <Compile Include="Assets/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
+    <Compile Include="Assets/Simple Inventory System/Scripts/TooltipManagerInventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
