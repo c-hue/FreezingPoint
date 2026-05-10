@@ -10,6 +10,7 @@ public class SelectionManager : MonoBehaviour
     public static SelectionManager Instance { get; set;}
     public GameObject interaction_Info_UI;
     public bool onTarget;
+    public GameObject selectedObject;
     TMP_Text interaction_text;
  
     private void Start()
@@ -41,6 +42,7 @@ public class SelectionManager : MonoBehaviour
             if (interactable && interactable.playerInRange)
             {
                 onTarget = true;
+                selectedObject = interactable.gameObject;
                 interaction_text.text = selectionTransform.GetComponent<InteractableObject>().GetItemName();
                 interaction_Info_UI.SetActive(true);
             }
