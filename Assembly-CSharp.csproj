@@ -49,23 +49,37 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/ItemObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ItemSlot.cs" />
     <Compile Include="Assets/Art/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
-    <Compile Include="Assets/Simple Inventory System/Scripts/InventoryItemData.cs" />
+    <Compile Include="Assets/Scripts/Inventory/DragDrop.cs" />
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/AccessoryLogic.cs" />
+    <Compile Include="Assets/Art/Simple Inventory System/Scripts/CardManager.cs" />
     <Compile Include="Assets/Scripts/Interact/SelectionManager.cs" />
+    <Compile Include="Assets/Art/Camping Pack/Extras/CampingPackWelcome.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
-    <Compile Include="Assets/Simple Inventory System/Scripts/ItemDraggingManager.cs" />
-    <Compile Include="Assets/Simple Inventory System/Scripts/CardManager.cs" />
+    <Compile Include="Assets/Art/Simple Inventory System/Scripts/TooltipManagerInventory.cs" />
+    <Compile Include="Assets/Art/Simple Inventory System/Scripts/InventoryItemData.cs" />
+    <Compile Include="Assets/Scripts/ReferenceManager.cs" />
     <Compile Include="Assets/Scripts/Player/MouseMovement.cs" />
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/ItemAnimationsObject.cs" />
+    <Compile Include="Assets/Art/Simple Inventory System/Scripts/ItemDraggingManager.cs" />
+    <Compile Include="Assets/Scripts/Inventory/InventorySystem.cs" />
     <Compile Include="Assets/Scripts/Interact/InteractableObject.cs" />
-    <Compile Include="Assets/Simple Inventory System/Scripts/TooltipManagerInventory.cs" />
+    <Compile Include="Assets/Art/Camping Pack/Extras/CampingPackCanvas.cs" />
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/AccessoryObject.cs" />
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/ItemLogic.cs" />
+    <Compile Include="Assets/Art/Supercyan/Scripts/Items/AccessoryItemLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/Art/Supercyan/Shaders/SharedShaders/Legacy/CelShader.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+    <None Include="Assets/Art/Supercyan/Shaders/SharedShaders/SupercyanShaderLighting.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
@@ -73,15 +87,18 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets/Art/Camping Pack/Extras/Safe To Delete.txt" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/Art/Devtricked/Low-Poly Forest Survival Starter Pack lite/Info/Thank You.txt" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/Art/Supercyan/Shaders/SharedShaders/SupercyanShader.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -1141,6 +1158,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.Analytics.dll</HintPath>
       <Private>False</Private>
@@ -1347,6 +1368,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InputSystem">
