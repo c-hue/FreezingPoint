@@ -63,7 +63,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 53
+    y: 66
     width: 1440
     height: 777
   m_ShowMode: 4
@@ -681,12 +681,12 @@ MonoBehaviour:
       displayed: 1
       id: Editor Controls/Layout
       index: 2
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-148.5,"y":-36.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -148.5, y: -36}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -765,12 +765,12 @@ MonoBehaviour:
       displayed: 1
       id: Play Mode Controls
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-434.5,"y":-36.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: -434.5, y: -36}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1498,9 +1498,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 587.9703, y: 668.2704, z: 805.98157}
+    m_Target: {x: 572.04224, y: 10.354579, z: 475.7084}
     speed: 2
-    m_Value: {x: 848.10754, y: 319.1136, z: 0}
+    m_Value: {x: -12.079563, y: 11.59873, z: -12.016291}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1546,17 +1546,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.553
   m_Rotation:
-    m_Target: {x: 0.33075926, y: 0.13022448, z: -0.046150927, w: 0.9335609}
+    m_Target: {x: -0.2881834, y: 0.10060678, z: -0.030455213, w: -0.9518054}
     speed: 2
-    m_Value: {x: -0.0015009481, y: -0.002101627, z: 0.00001434527, w: -1.0000067}
+    m_Value: {x: -0.295454, y: -0.272648, z: 0.088391975, w: -0.9113552}
   m_Size:
-    m_Target: 0.29218814
+    m_Target: 9.354726
     speed: 2
-    m_Value: 226.34483
+    m_Value: 15.811538
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 2
     m_SpeedNormalized: 1
@@ -1714,17 +1714,16 @@ MonoBehaviour:
       m_Data: 55602
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51186
-    - m_Data: 51188
-    - m_Data: 51190
-    - m_Data: 51192
-    - m_Data: 51194
-    - m_Data: 51196
-    - m_Data: 51198
-    - m_Data: 51200
-    - m_Data: 51202
-    - m_Data: 51204
-    - m_Data: 51206
+    - m_Data: 51154
+    - m_Data: 51156
+    - m_Data: 51158
+    - m_Data: 51160
+    - m_Data: 51162
+    - m_Data: 51164
+    - m_Data: 51166
+    - m_Data: 51168
+    - m_Data: 51170
+    - m_Data: 51172
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1757,17 +1756,16 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51186
-    - m_Data: 51188
-    - m_Data: 51190
-    - m_Data: 51192
-    - m_Data: 51194
-    - m_Data: 51196
-    - m_Data: 51198
-    - m_Data: 51200
-    - m_Data: 51202
-    - m_Data: 51204
-    - m_Data: 51206
+    - m_Data: 51154
+    - m_Data: 51156
+    - m_Data: 51158
+    - m_Data: 51160
+    - m_Data: 51162
+    - m_Data: 51164
+    - m_Data: 51166
+    - m_Data: 51168
+    - m_Data: 51170
+    - m_Data: 51172
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
