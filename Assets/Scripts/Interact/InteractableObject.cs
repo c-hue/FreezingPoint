@@ -4,12 +4,27 @@ using UnityEngine;
  
 public class InteractableObject : MonoBehaviour
 {
+    [Header("Item Info")]
+    [SerializeField] public string ItemName;
     public bool playerInRange;
-    public string ItemName;
+
+    [Header("Map Info")]
+    private RegionManager regionManager;
+    private RegionDefinition region;
+    private ResourceSpawnRule resourceRule;
+    private bool isProceduralResource = false;
  
     public string GetItemName()
     {
         return ItemName;
+    }
+
+    public void SetupProceduralResource(RegionManager manager, RegionDefinition assignedRegion, ResourceSpawnRule rule)
+    {
+        regionManager = manager;
+        region = assignedRegion;
+        resourceRule = rule;
+        isProceduralResource = true;
     }
 
     void Update()
@@ -21,12 +36,15 @@ public class InteractableObject : MonoBehaviour
             if (!InventorySystem.Instance.CheckIfFull())
             {
                 InventorySystem.Instance.AddToInventory(ItemName);
+                if (isProceduralResource)
+                {
+                    regionManager.OnResourceCollected(region, resourceRule);
+                }
                 Destroy(gameObject);
             } else
             {
                 Debug.Log("inventory is full");
             }
-            
         }
     }
 
