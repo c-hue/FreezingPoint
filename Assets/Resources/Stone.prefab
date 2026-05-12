@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2127405381254201430}
   - component: {fileID: 5074401594525535910}
   m_Layer: 5
-  m_Name: Wood
+  m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a401714f386c146afbda3e8770cacb27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfdce0bcd67bd49f0a2591150de837cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
