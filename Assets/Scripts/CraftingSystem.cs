@@ -130,13 +130,13 @@ public class CraftingSystem : MonoBehaviour
 
         InventorySystem.Instance.ReCalculateList();
 
-        StartCoroutine(calculate());
+        StartCoroutine(Calculate());
 
         RefreshNeededItems();
 
     }
 
-    public IEnumerator calculate()
+    public IEnumerator Calculate()
     {
         yield return new WaitForSeconds(1f);
 

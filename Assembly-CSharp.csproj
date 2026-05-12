@@ -49,12 +49,15 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/StatusBar/HungerBar.cs" />
     <Compile Include="Assets/Art/Supercyan/Scripts/Items/ItemObject.cs" />
+    <Compile Include="Assets/Scripts/StatusBar/HealthBar.cs" />
     <Compile Include="Assets/Scripts/Inventory/ItemSlot.cs" />
     <Compile Include="Assets/Art/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
     <Compile Include="Assets/Scripts/Inventory/DragDrop.cs" />
     <Compile Include="Assets/Art/Supercyan/Scripts/Items/AccessoryLogic.cs" />
     <Compile Include="Assets/Art/Simple Inventory System/Scripts/CardManager.cs" />
+    <Compile Include="Assets/Scripts/StatusBar/PlayerState.cs" />
     <Compile Include="Assets/Scripts/Interact/SelectionManager.cs" />
     <Compile Include="Assets/Scripts/CraftingSystem.cs" />
     <Compile Include="Assets/Art/Camping Pack/Extras/CampingPackWelcome.cs" />
@@ -67,6 +70,7 @@
     <Compile Include="Assets/Art/Simple Inventory System/Scripts/ItemDraggingManager.cs" />
     <Compile Include="Assets/Scripts/Inventory/InventorySystem.cs" />
     <Compile Include="Assets/Scripts/Interact/InteractableObject.cs" />
+    <Compile Include="Assets/Scripts/StatusBar/FreezeBar.cs" />
     <Compile Include="Assets/Art/Camping Pack/Extras/CampingPackCanvas.cs" />
     <Compile Include="Assets/Art/Supercyan/Scripts/Items/AccessoryObject.cs" />
     <Compile Include="Assets/Art/Supercyan/Scripts/Items/ItemLogic.cs" />
