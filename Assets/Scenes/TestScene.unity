@@ -1172,7 +1172,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 354}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226459578
 MonoBehaviour:
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tools
+  m_text: Resources
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1894,7 +1894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &451885796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3451,9 +3451,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingSystem
   craftingScreenUI: {fileID: 1703613726}
   toolsScreenUI: {fileID: 206043899}
+  resourcesScreenUI: {fileID: 451885795}
   inventoryItemList: []
   isOpen: 0
   AxeBLP: {fileID: 11400000, guid: 77ea1873cf0d140249517fa00fd1a846, type: 2}
+  StickBLP: {fileID: 11400000, guid: cace8b385690041569147ed24076bbdc, type: 2}
 --- !u!4 &870827600
 Transform:
   m_ObjectHideFlags: 0
