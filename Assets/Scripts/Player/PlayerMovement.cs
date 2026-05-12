@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
  
     bool isGrounded;
+    public bool isRunning;
  
     // Update is called once per frame
     void Update()
@@ -31,9 +32,11 @@ public class PlayerMovement : MonoBehaviour
          if (Input.GetButton("Sprint"))
         {
             speed = 24f;
+            isRunning = true;
         } else
         {
             speed = 12f;
+            isRunning = false;
         }
  
         float x = Input.GetAxis("Horizontal");
