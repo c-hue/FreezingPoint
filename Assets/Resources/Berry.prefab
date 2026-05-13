@@ -117,6 +117,7 @@ MonoBehaviour:
   isTrashable: 1
   thisName: Blueberry
   thisDescription: Consumable. +5 Hunger
+  thisInstruction: Right Click to Consume
   isConsumable: 1
   healthEffect: 0
   hungerEffect: 5

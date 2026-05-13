@@ -15,7 +15,8 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
  
     private TMP_Text itemInfoUI_itemName;
     private TMP_Text itemInfoUI_itemDescription; 
-    public string thisName, thisDescription;
+    private TMP_Text itemInfoUI_itemInstruction;
+    public string thisName, thisDescription, thisInstruction;
  
     // --- Consumption --- //
     private GameObject itemPendingConsumption;
@@ -29,6 +30,7 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         itemInfoUI = InventorySystem.Instance.ItemInfoUI;
         itemInfoUI_itemName = itemInfoUI.transform.Find("itemName").GetComponent<TMP_Text>();
         itemInfoUI_itemDescription = itemInfoUI.transform.Find("itemDescription").GetComponent<TMP_Text>();
+        itemInfoUI_itemInstruction = itemInfoUI.transform.Find("itemInstruction").GetComponent<TMP_Text>();
     }
  
     // Triggered when the mouse enters into the area of the item that has this script.
@@ -37,6 +39,7 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         itemInfoUI.SetActive(true);
         itemInfoUI_itemName.text = thisName;
         itemInfoUI_itemDescription.text = thisDescription;
+        itemInfoUI_itemInstruction.text = thisInstruction;
     }
  
     // Triggered when the mouse exits the area of the item that has this script.

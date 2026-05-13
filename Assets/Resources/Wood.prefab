@@ -117,6 +117,7 @@ MonoBehaviour:
   isTrashable: 1
   thisName: Wood
   thisDescription: Used to Craft
+  thisInstruction: Press C to Craft
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0
