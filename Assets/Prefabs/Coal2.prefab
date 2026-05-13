@@ -71,6 +71,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 383282586856561209, guid: 3ddd6179c16b8b0419529f263b564e88, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5830116750619587194}
+    - targetCorrespondingSourceObject: {fileID: 383282586856561209, guid: 3ddd6179c16b8b0419529f263b564e88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8288385289584529297}
+    - targetCorrespondingSourceObject: {fileID: 383282586856561209, guid: 3ddd6179c16b8b0419529f263b564e88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9016457366056890290}
   m_SourcePrefab: {fileID: 100100000, guid: 3ddd6179c16b8b0419529f263b564e88, type: 3}
 --- !u!1 &4519060711005901842 stripped
 GameObject:
@@ -91,3 +97,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   ItemName: Coal
   playerInRange: 0
+--- !u!136 &8288385289584529297
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4519060711005901842}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.51508677
+  m_Height: 0.6670816
+  m_Direction: 1
+  m_Center: {x: 0.093551636, y: 0.3355564, z: -0.00997445}
+--- !u!65 &9016457366056890290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4519060711005901842}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0.093551636, y: 0.3355564, z: -0.00997445}

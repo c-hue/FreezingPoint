@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3410818423694845234, guid: 1a9b1a4b7ddeb6f4bb0336b65e900569, type: 3}
       propertyPath: m_Name
-      value: HardRock_17 Variant
+      value: Stone1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71,6 +71,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3410818423694845234, guid: 1a9b1a4b7ddeb6f4bb0336b65e900569, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6652596223234553820}
+    - targetCorrespondingSourceObject: {fileID: 3410818423694845234, guid: 1a9b1a4b7ddeb6f4bb0336b65e900569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2488484213489015131}
+    - targetCorrespondingSourceObject: {fileID: 3410818423694845234, guid: 1a9b1a4b7ddeb6f4bb0336b65e900569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7644523903766462794}
   m_SourcePrefab: {fileID: 100100000, guid: 1a9b1a4b7ddeb6f4bb0336b65e900569, type: 3}
 --- !u!1 &7132173660145461081 stripped
 GameObject:
@@ -91,3 +97,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   ItemName: Stone
   playerInRange: 0
+--- !u!65 &2488484213489015131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132173660145461081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 5}
+  m_Center: {x: -0.024723396, y: 0.27070507, z: 0.00881125}
+--- !u!136 &-7644523903766462794
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132173660145461081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3889833
+  m_Height: 0.5545085
+  m_Direction: 1
+  m_Center: {x: -0.024723396, y: 0.27070507, z: 0.00881125}

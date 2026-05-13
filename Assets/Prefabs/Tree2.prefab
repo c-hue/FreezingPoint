@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5061014825844588671}
   - component: {fileID: 5536079742979264847}
   - component: {fileID: 5325958169311160110}
+  - component: {fileID: 3654326542065996931}
+  - component: {fileID: -3065340113354761484}
   m_Layer: 0
   m_Name: Tree2
   m_TagString: Untagged
@@ -128,3 +130,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   ItemName: Wood
   playerInRange: 0
+--- !u!65 &3654326542065996931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718432053154308522}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0.027790371, y: 2.587627, z: 0}
+--- !u!136 &-3065340113354761484
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718432053154308522}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1863992
+  m_Height: 5.237193
+  m_Direction: 1
+  m_Center: {x: 0.027790371, y: 2.587627, z: 0}

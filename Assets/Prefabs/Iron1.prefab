@@ -71,6 +71,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4969605176084426650, guid: 6e17129b6baf2ed44948932e679228bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1737770641775491983}
+    - targetCorrespondingSourceObject: {fileID: 4969605176084426650, guid: 6e17129b6baf2ed44948932e679228bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4944325169126312643}
+    - targetCorrespondingSourceObject: {fileID: 4969605176084426650, guid: 6e17129b6baf2ed44948932e679228bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6849145788507841219}
   m_SourcePrefab: {fileID: 100100000, guid: 6e17129b6baf2ed44948932e679228bf, type: 3}
 --- !u!1 &4780541491563742957 stripped
 GameObject:
@@ -91,3 +97,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   ItemName: Iron
   playerInRange: 0
+--- !u!136 &4944325169126312643
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780541491563742957}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.51508677
+  m_Height: 0.6635919
+  m_Direction: 1
+  m_Center: {x: 0.008842975, y: 0.33381155, z: -0.00997445}
+--- !u!65 &-6849145788507841219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780541491563742957}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0.008842975, y: 0.33381155, z: -0.00997445}

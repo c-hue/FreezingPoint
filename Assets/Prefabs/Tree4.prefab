@@ -75,6 +75,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3654120164719579372, guid: 221b274084495684db9bc9c630eb7155, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6583074799698561825}
+    - targetCorrespondingSourceObject: {fileID: 3654120164719579372, guid: 221b274084495684db9bc9c630eb7155, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5456402896126429599}
+    - targetCorrespondingSourceObject: {fileID: 3654120164719579372, guid: 221b274084495684db9bc9c630eb7155, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -364350715233751850}
   m_SourcePrefab: {fileID: 100100000, guid: 221b274084495684db9bc9c630eb7155, type: 3}
 --- !u!1 &3992107177461382596 stripped
 GameObject:
@@ -117,3 +123,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   ItemName: Wood
   playerInRange: 0
+--- !u!65 &5456402896126429599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992107177461382596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: -0.015441059, y: 2.9460325, z: 0.014741062}
+--- !u!136 &-364350715233751850
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992107177461382596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.186399
+  m_Height: 5.935651
+  m_Direction: 1
+  m_Center: {x: -0.015441059, y: 2.9460325, z: 0.014741062}

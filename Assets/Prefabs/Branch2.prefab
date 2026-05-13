@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6741921580163197003}
   - component: {fileID: 8385682137631594937}
   - component: {fileID: 7783791444320770684}
+  - component: {fileID: 5334174511441168203}
   m_Layer: 6
   m_Name: Branch2
   m_TagString: Untagged
@@ -148,5 +149,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe61e1081464703b4d3be58d2a9156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  ItemName: Sticks
+  ItemName: Stick
   playerInRange: 0
+--- !u!136 &5334174511441168203
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2650875728456283968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.93642384
+  m_Height: 0.30714923
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.0031747296, z: 0}

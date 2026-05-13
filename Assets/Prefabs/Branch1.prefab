@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1493958779012120596, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5650405977585924159}
+    - targetCorrespondingSourceObject: {fileID: 1493958779012120596, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1845858118314800000}
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
 --- !u!1 &3442896866354449329 stripped
 GameObject:
@@ -103,7 +106,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8140006, y: 0.21063979, z: 0.14940426}
+  m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0.0016748162, y: 0.04498401, z: -0.001337275}
 --- !u!114 &-5650405977585924159
 MonoBehaviour:
@@ -117,5 +120,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe61e1081464703b4d3be58d2a9156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  ItemName: Sticks
+  ItemName: Stick
   playerInRange: 0
+--- !u!136 &-1845858118314800000
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442896866354449329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.40700024
+  m_Height: 0.21063976
+  m_Direction: 1
+  m_Center: {x: 0.001674816, y: 0.044984005, z: -0.0013372749}

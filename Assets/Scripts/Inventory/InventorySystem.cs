@@ -5,8 +5,8 @@ using UnityEngine;
  
 public class InventorySystem : MonoBehaviour
 {
- 
-   public static InventorySystem Instance { get; set; }
+    public GameObject ItemInfoUI;
+    public static InventorySystem Instance { get; set; }
  
     public GameObject inventoryScreenUI;
     public List<GameObject> slotList = new List<GameObject>();
@@ -74,6 +74,11 @@ public class InventorySystem : MonoBehaviour
     public void AddToInventory(string itemName)
     {
         whatSlotToEquip = FindNextEmptySlot();
+        if (whatSlotToEquip == null)
+        {
+            Debug.Log("inventory is full");
+            return;
+        }
         itemToAdd = Instantiate(Resources.Load<GameObject>(itemName), whatSlotToEquip.transform.position, whatSlotToEquip.transform.rotation);
         itemToAdd.transform.SetParent(whatSlotToEquip.transform);
         itemList.Add(itemName);
@@ -89,7 +94,7 @@ public class InventorySystem : MonoBehaviour
             {
                 if (slotList[i].transform.GetChild(0).name == nameToRemove + "(Clone)" && counter != 0)
                 {
-                    Destroy(slotList[i].transform.GetChild(0).gameObject);
+                    DestroyImmediate(slotList[i].transform.GetChild(0).gameObject);
                     counter -= 1;
                 }
             }
@@ -104,7 +109,7 @@ public class InventorySystem : MonoBehaviour
                 return slot;
             }
         }
-        return new GameObject();
+        return null;
     }
 
     public bool CheckIfFull()

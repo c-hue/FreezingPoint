@@ -97,4 +97,14 @@ public class PlayerState : MonoBehaviour
         }
     }
 
+    public void setHealth(float newHealth)
+    {
+        currentHealth = newHealth;
+    }
+
+    public void setHunger(float newHunger)
+    {
+        currentHunger = newHunger;
+    }
+
 }

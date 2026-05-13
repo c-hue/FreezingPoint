@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2055403835737943443}
   - component: {fileID: 2764784100440529504}
   - component: {fileID: 421135599115192197}
+  - component: {fileID: -8638272320968745668}
   m_Layer: 5
   m_Name: Axe
   m_TagString: Untagged
@@ -101,3 +102,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-8638272320968745668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4961846824837137934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20da0e8db7fecf64ab248b14361bc2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
+  isTrashable: 0
+  thisName: Axe
+  thisDescription: Used to Chop Trees
+  isConsumable: 0
+  healthEffect: 0
+  hungerEffect: 0
