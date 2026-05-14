@@ -90,6 +90,10 @@ public class PlayerState : MonoBehaviour
             Debug.Log("die");
             GameplaySequence.Instance?.LoseGame();
         }
+
+        if (lanternEquipped && !RegionSystem.Instance.region1Enter) {
+            lanternTimer -= Time.deltaTime;
+        }
     }
 
     private void DepleteStats()
@@ -119,7 +123,7 @@ public class PlayerState : MonoBehaviour
             {
                 currentFreezing += 5f;
             }
-        }
+        } 
         
 
     }

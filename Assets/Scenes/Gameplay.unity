@@ -3458,7 +3458,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4512938558357274293, guid: 94233ba1b6b03435a876c9a502a4d52a, type: 3}
       propertyPath: ItemName
-      value: Stone
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: -4512938558357274293, guid: 94233ba1b6b03435a876c9a502a4d52a, type: 3}
       propertyPath: playerInRange
@@ -4855,7 +4855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: 125}
+  m_AnchoredPosition: {x: 0, y: 125}
   m_SizeDelta: {x: 150, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364488317
@@ -4940,7 +4940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: 125}
+  m_AnchoredPosition: {x: 0, y: -175}
   m_SizeDelta: {x: 150, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369004050
@@ -19942,7 +19942,7 @@ MonoBehaviour:
       - {fileID: 3442896866354449329, guid: c7499ff2ef8894cf3bd941cc3fa22580, type: 3}
       - {fileID: 2650875728456283968, guid: 63517c1032dc44253a377199ec03658f, type: 3}
       - {fileID: 1242144133022850005, guid: f92c9f12e692f45989ced53cc25cd8e0, type: 3}
-      maxCount: 50
+      maxCount: 100
       respawnTime: 30
       radius: 2
       randomRotation: 1
@@ -19950,7 +19950,7 @@ MonoBehaviour:
       prefabs:
       - {fileID: 3988973729990521250, guid: ed9b0af87897a46ad96b94f1e1a121d3, type: 3}
       - {fileID: 3708718498603022330, guid: 94233ba1b6b03435a876c9a502a4d52a, type: 3}
-      maxCount: 50
+      maxCount: 100
       respawnTime: 30
       radius: 2
       randomRotation: 1
@@ -24919,6 +24919,11 @@ RectTransform:
   m_Children:
   - {fileID: 1867277833}
   - {fileID: 982305599}
+  - {fileID: 2038933505}
+  - {fileID: 1065610010}
+  - {fileID: 1164457052}
+  - {fileID: 1217638377}
+  - {fileID: 1322997166}
   - {fileID: 1261625750}
   - {fileID: 700290709}
   - {fileID: 1900302670}
@@ -24926,13 +24931,8 @@ RectTransform:
   - {fileID: 1827004664}
   - {fileID: 51828129}
   - {fileID: 1825679301}
-  - {fileID: 2038933505}
-  - {fileID: 1065610010}
-  - {fileID: 1164457052}
-  - {fileID: 1217638377}
   - {fileID: 1948179109}
   - {fileID: 1084370880}
-  - {fileID: 1322997166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -25421,7 +25421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239.99994, y: 125.00006}
+  m_AnchoredPosition: {x: 0, y: 125.00006}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762551488
@@ -25852,7 +25852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -175}
+  m_AnchoredPosition: {x: -210, y: 125}
   m_SizeDelta: {x: 150, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791014912
@@ -29525,7 +29525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3505653855132910367, guid: ed9b0af87897a46ad96b94f1e1a121d3, type: 3}
       propertyPath: ItemName
-      value: Stone
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: -3505653855132910367, guid: ed9b0af87897a46ad96b94f1e1a121d3, type: 3}
       propertyPath: playerInRange
@@ -29651,7 +29651,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4512938558357274293, guid: 94233ba1b6b03435a876c9a502a4d52a, type: 3}
       propertyPath: ItemName
-      value: Stone
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: -4512938558357274293, guid: 94233ba1b6b03435a876c9a502a4d52a, type: 3}
       propertyPath: playerInRange
