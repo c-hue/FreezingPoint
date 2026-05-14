@@ -77,6 +77,10 @@ public class PlayerState : MonoBehaviour
             warmedUp = false;
         }
 
+        if (currentHealth <= 0)
+        {
+            GameplaySequence.LoseGame();
+        }
     }
 
     private void DepleteStats()

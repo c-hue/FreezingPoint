@@ -39,6 +39,12 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("Intro");
+    }
+
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
