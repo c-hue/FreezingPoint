@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
          if (Input.GetButton("Sprint"))
         {
-            speed = 24f;
+            speed = 10;
             isRunning = true;
         } else
         {
-            speed = 12f;
+            speed = 7f;
             isRunning = false;
         }
  
