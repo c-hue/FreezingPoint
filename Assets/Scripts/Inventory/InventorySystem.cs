@@ -6,6 +6,7 @@ using UnityEngine;
 public class InventorySystem : MonoBehaviour
 {
     public GameObject ItemInfoUI;
+    public GameObject chopHolder;
     public static InventorySystem Instance { get; set; }
  
     public GameObject inventoryScreenUI;
@@ -56,6 +57,7 @@ public class InventorySystem : MonoBehaviour
  
 		    Debug.Log("E is pressed");
             inventoryScreenUI.SetActive(true);
+            chopHolder.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             isOpen = true;
             Cursor.visible = true;

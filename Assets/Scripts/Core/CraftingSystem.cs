@@ -10,6 +10,9 @@ public class CraftingSystem : MonoBehaviour
     public GameObject craftingScreenUI;
     public GameObject toolsScreenUI;
     public GameObject resourcesScreenUI;
+    public GameObject baseScreenUI;
+    public GameObject foodScreenUI;
+    public GameObject chopHolder;
 
     public List<string> inventoryItemList = new List<string> ();
 
@@ -22,15 +25,20 @@ public class CraftingSystem : MonoBehaviour
     //Craft Buttons
     Button craftAxeBTN;
     Button craftStickBTN;
+    Button craftCompassBTN, craftHammerBTN, craftKnifeBTN, craftCampfireBTN;
 
     //Requirement Text
-    TMP_Text AxeReq1, AxeReq2, StickReq1;
+    TMP_Text AxeReq1, AxeReq2, StickReq1, CompassReq1, CompassReq2, HammerReq1, HammerReq2, KnifeReq1, KnifeReq2, CampfireReq1, CampfireReq2;
 
     public bool isOpen;
 
     //All Blueprints
     public Blueprint AxeBLP;
     public Blueprint StickBLP;
+    public Blueprint CompassBLP;
+    public Blueprint CampfireBLP;
+    public Blueprint HammerBLP;
+    public Blueprint KnifeBLP;
 
 
     public static CraftingSystem Instance { get; set; }
@@ -77,6 +85,34 @@ public class CraftingSystem : MonoBehaviour
         craftStickBTN = resourcesScreenUI.transform.Find("Stick").transform.Find("Button").GetComponent<Button>();
         craftStickBTN.onClick.AddListener(delegate { CraftAnyItem(StickBLP); });
 
+        // Compass
+        CompassReq1 = toolsScreenUI.transform.Find("Compass").transform.Find("req1").GetComponent<TMP_Text>();
+        AxeReq2 = toolsScreenUI.transform.Find("Compass").transform.Find("req2").GetComponent<TMP_Text>();
+
+        craftCompassBTN = toolsScreenUI.transform.Find("Compass").transform.Find("Button").GetComponent<Button>();
+        craftCompassBTN.onClick.AddListener(delegate { CraftAnyItem(CompassBLP); });
+
+        // Hammer
+        HammerReq1 = toolsScreenUI.transform.Find("Hammer").transform.Find("req1").GetComponent<TMP_Text>();
+        HammerReq2 = toolsScreenUI.transform.Find("Hammer").transform.Find("req2").GetComponent<TMP_Text>();
+
+        craftHammerBTN = toolsScreenUI.transform.Find("Hammer").transform.Find("Button").GetComponent<Button>();
+        craftHammerBTN.onClick.AddListener(delegate { CraftAnyItem(HammerBLP); });
+
+        // Knife
+        KnifeReq1 = toolsScreenUI.transform.Find("Knife").transform.Find("req1").GetComponent<TMP_Text>();
+        KnifeReq2 = toolsScreenUI.transform.Find("Knife").transform.Find("req2").GetComponent<TMP_Text>();
+
+        craftKnifeBTN = toolsScreenUI.transform.Find("Knife").transform.Find("Button").GetComponent<Button>();
+        craftKnifeBTN.onClick.AddListener(delegate { CraftAnyItem(KnifeBLP); });
+
+        // Campfire
+        CampfireReq1 = baseScreenUI.transform.Find("Campfire").transform.Find("req1").GetComponent<TMP_Text>();
+        CampfireReq2 = baseScreenUI.transform.Find("Campfire").transform.Find("req2").GetComponent<TMP_Text>();
+
+        craftCampfireBTN = toolsScreenUI.transform.Find("Campfire").transform.Find("Button").GetComponent<Button>();
+        craftCampfireBTN.onClick.AddListener(delegate { CraftAnyItem(CampfireBLP); });
+
     }
 
    
@@ -95,11 +131,13 @@ public class CraftingSystem : MonoBehaviour
     void OpenBaseCategory()
     {
         craftingScreenUI.SetActive (false);
+        baseScreenUI.SetActive (true);
     }
 
     void OpenFoodCategory()
     {
         craftingScreenUI.SetActive (false);
+        foodScreenUI.SetActive (true);
     }
 
 
@@ -152,6 +190,7 @@ public class CraftingSystem : MonoBehaviour
         {
 
             craftingScreenUI.SetActive(true);
+            chopHolder.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             isOpen = true;
@@ -178,6 +217,8 @@ public class CraftingSystem : MonoBehaviour
         int stone_count = 0;
         int stick_count = 0;
         int wood_count = 0;
+        int iron_count = 0;
+        int rock_count = 0;
 
         inventoryItemList = InventorySystem.Instance.itemList;
 
@@ -194,6 +235,13 @@ public class CraftingSystem : MonoBehaviour
                 case "Wood":
                     wood_count +=1;
                     break;
+                case "Iron":
+                    iron_count +=1;
+                    break;
+                case "Rock":
+                    rock_count +=1;
+                    break;
+                
             }
         }
 
@@ -218,6 +266,54 @@ public class CraftingSystem : MonoBehaviour
         } else
         {
             craftStickBTN.gameObject.SetActive(false);
+        }
+
+        // Campfire 
+        CampfireReq1.text = "3 Wood [" + wood_count +"]";
+        CampfireReq2.text = "2 Rocks [" + rock_count +"]";
+
+        if (wood_count >= 3 && rock_count >= 3)
+        {
+            craftCampfireBTN.gameObject.SetActive(true);
+        } else
+        {
+            craftCampfireBTN.gameObject.SetActive(false);
+        }
+
+        // Hammer 
+        HammerReq1.text = "5 Stone [" + stone_count +"]";
+        HammerReq2.text = "3 Stick [" + stick_count +"]";
+
+        if (stone_count >= 5 && stick_count >= 3)
+        {
+            craftHammerBTN.gameObject.SetActive(true);
+        } else
+        {
+            craftHammerBTN.gameObject.SetActive(false);
+        }
+
+        // Knife 
+        KnifeReq1.text = "3 Iron [" + iron_count +"]";
+        KnifeReq2.text = "2 Stick [" + stick_count +"]";
+
+        if (iron_count >= 3 && stick_count >= 2)
+        {
+            craftKnifeBTN.gameObject.SetActive(true);
+        } else
+        {
+            craftKnifeBTN.gameObject.SetActive(false);
+        }
+
+        // Compass 
+        CompassReq1.text = "4 Iron [" + iron_count +"]";
+        CompassReq2.text = "1 Wood [" + wood_count +"]";
+
+        if (iron_count >= 4 && wood_count >= 1)
+        {
+            craftCompassBTN.gameObject.SetActive(true);
+        } else
+        {
+            craftCompassBTN.gameObject.SetActive(false);
         }
 
     }

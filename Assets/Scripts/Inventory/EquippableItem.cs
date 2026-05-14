@@ -19,6 +19,7 @@ public class EquippableItem : MonoBehaviour
             GameObject selectedTree = SelectionManager.Instance.selectedTree;
             if (selectedTree != null)
             {
+            
                 selectedTree.GetComponent<ChoppableTree>().GetHit();
             }
         }

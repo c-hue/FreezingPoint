@@ -44,7 +44,7 @@ public class SelectionManager : MonoBehaviour
             ChoppableTree choppableTree =
                 selectionTransform.GetComponentInParent<ChoppableTree>() ??
                 selectionTransform.GetComponentInChildren<ChoppableTree>();
-            if (choppableTree && choppableTree.playerInRange)
+            if (choppableTree && choppableTree.playerInRange && !CraftingSystem.Instance.isOpen && !InventorySystem.Instance.isOpen)
             {
                 choppableTree.canBeChopped = true;
                 selectedTree = choppableTree.gameObject;
@@ -59,7 +59,7 @@ public class SelectionManager : MonoBehaviour
                 }
             }
  
-            if (interactable && interactable.playerInRange && !choppableTree)
+            if (interactable && interactable.playerInRange && !choppableTree && !CraftingSystem.Instance.isOpen && !InventorySystem.Instance.isOpen)
             {
                 onTarget = true;
                 selectedObject = interactable.gameObject;
