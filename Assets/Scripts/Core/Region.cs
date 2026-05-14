@@ -14,6 +14,7 @@ public class Region : MonoBehaviour
         {
             if (!RegionSystem.Instance.region1Enter && RegionSystem.Instance.region2Enter)
             {
+                PlayerState.Instance.lanternTimer = 120f;
                 RegionSystem.Instance.region1Enter = true;
                 RegionSystem.Instance.region2Enter = false;
                 PlayerState.Instance.warmedUp = true;

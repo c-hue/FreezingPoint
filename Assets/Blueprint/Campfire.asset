@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Campfire
   m_EditorClassIdentifier: Assembly-CSharp::Blueprint
   itemName: Campfire
-  Req1: Wood
+  Req1: Stick
   Req2: Rock
   Req3: 
   Req1amount: 3

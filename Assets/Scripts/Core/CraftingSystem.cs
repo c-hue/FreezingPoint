@@ -216,11 +216,10 @@ public class CraftingSystem : MonoBehaviour
 
     public void RefreshNeededItems()
     {
-        int stone_count = 0;
+        int rock_count = 0;
         int stick_count = 0;
         int wood_count = 0;
         int iron_count = 0;
-        int rock_count = 0;
 
         inventoryItemList = InventorySystem.Instance.itemList;
 
@@ -228,9 +227,6 @@ public class CraftingSystem : MonoBehaviour
         {
             switch (itemName)
             {
-                case "Stone":
-                    stone_count += 1;
-                    break;
                 case "Stick":
                     stick_count += 1;
                     break;
@@ -248,10 +244,10 @@ public class CraftingSystem : MonoBehaviour
         }
 
         // AXE 
-        AxeReq1.text = "3 Stone [" + stone_count +"]";
+        AxeReq1.text = "3 Rock [" + rock_count +"]";
         AxeReq2.text = "3 Stick [" + stick_count +"]";
 
-        if (stone_count >= 3 && stick_count >= 3)
+        if (rock_count >= 3 && stick_count >= 3)
         {
             craftAxeBTN.gameObject.SetActive(true);
         } else
@@ -271,10 +267,10 @@ public class CraftingSystem : MonoBehaviour
         }
 
         // Campfire 
-        CampfireReq1.text = "3 Wood [" + wood_count +"]";
-        CampfireReq2.text = "2 Rocks [" + rock_count +"]";
+        CampfireReq1.text = "3 Stick [" + stick_count +"]";
+        CampfireReq2.text = "2 Rock [" + rock_count +"]";
 
-        if (wood_count >= 3 && rock_count >= 3)
+        if (stick_count >= 3 && rock_count >= 3)
         {
             craftCampfireBTN.gameObject.SetActive(true);
         } else
@@ -283,10 +279,10 @@ public class CraftingSystem : MonoBehaviour
         }
 
         // Hammer 
-        HammerReq1.text = "5 Stone [" + stone_count +"]";
+        HammerReq1.text = "5 Rock [" + rock_count +"]";
         HammerReq2.text = "3 Stick [" + stick_count +"]";
 
-        if (stone_count >= 5 && stick_count >= 3)
+        if (rock_count >= 5 && stick_count >= 3)
         {
             craftHammerBTN.gameObject.SetActive(true);
         } else

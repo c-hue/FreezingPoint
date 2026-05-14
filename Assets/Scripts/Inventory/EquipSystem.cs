@@ -95,6 +95,7 @@ public class EquipSystem : MonoBehaviour
                 {
                     selectedItem.gameObject.GetComponent<InventoryItem>().isSelected = false;
                     selectedItem = null;
+                    PlayerState.Instance.lanternEquipped = false;
                 }
 
                 if(selectedItemModel != null)
@@ -123,8 +124,28 @@ public class EquipSystem : MonoBehaviour
             selectedItemModel = null;
         }
         string selectedItemName = selectedItem.name.Replace("(Clone)", "");
-        selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
+        PlayerState.Instance.lanternEquipped = selectedItemName == "Lantern";
+        if (selectedItemName == "Lantern")
+        {
+            selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
+            new Vector3(0.37f, 0.61f, 0.56f), Quaternion.Euler(0f, 0f, 0f));
+        } else if (selectedItemName == "Axe")
+        {
+            selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
             new Vector3(0.4f, 0.3f, 0.45f), Quaternion.Euler(72f, -165f, 280f));
+        } else if (selectedItemName == "Hammer")
+        {
+            selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
+            new Vector3(0.5f, 0.13f, 0.55f), Quaternion.Euler(72f, -165f, 280f));
+        } else if (selectedItemName == "Knife") {
+            selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
+            new Vector3(0.36f, 0.7f, 0.54f), Quaternion.Euler(75f, 176f, 270f));
+        } else
+        {
+            selectedItemModel = Instantiate(Resources.Load<GameObject>(selectedItemName + "_Model"), 
+            new Vector3(0.85f, 0.5f, 1.49f), Quaternion.Euler(90f, 180f, -19f));
+        }
+        
         selectedItemModel.transform.SetParent(toolHolder.transform, false);
     }
 
