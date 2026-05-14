@@ -117,10 +117,11 @@ MonoBehaviour:
   isTrashable: 1
   thisName: Campfire
   thisDescription: Used to Keep Warm
-  thisInstruction: 
+  thisInstruction: Right Click to Place
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0
   isEquippable: 0
   isInsideQuickSlot: 0
   isSelected: 0
+  isCampfire: 1

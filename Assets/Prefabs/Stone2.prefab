@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe61e1081464703b4d3be58d2a9156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  ItemName: Stone
+  ItemName: Rock
   playerInRange: 0
 --- !u!136 &-4158170725853332690
 CapsuleCollider:

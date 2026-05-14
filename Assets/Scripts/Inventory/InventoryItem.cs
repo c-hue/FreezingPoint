@@ -29,6 +29,7 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private GameObject itemPendingEquipping;
     public bool isInsideQuickSlot;
     public bool isSelected;
+    public bool isCampfire;
  
     private void Start()
     {
@@ -82,7 +83,21 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 EquipSystem.Instance.AddToQuickSlots(gameObject);
                 isInsideQuickSlot = true;
             }
+
+            if (isCampfire)
+            {
+                GameObject campfire = GameObject.Find("Campsite");
+                if (campfire != null && campfire.transform.childCount > 0)
+                {
+                    campfire.transform.GetChild(0).gameObject.SetActive(true);
+                }
+
+                Destroy(gameObject);
+                InventorySystem.Instance.ReCalculateList();
+                CraftingSystem.Instance.RefreshNeededItems();
+            }
         }
+
 
         
     }

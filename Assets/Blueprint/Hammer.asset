@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: Assembly-CSharp::Blueprint
   itemName: Hammer
-  Req1: Stone
+  Req1: Rock
   Req2: Stick
   Req3: 
   Req1amount: 5

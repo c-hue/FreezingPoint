@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AxeBLP
   m_EditorClassIdentifier: Assembly-CSharp::Blueprint
   itemName: Axe
-  Req1: Stone
+  Req1: Rock
   Req2: Stick
   Req3: 
   Req1amount: 3

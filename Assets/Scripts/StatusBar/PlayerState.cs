@@ -27,6 +27,8 @@ public class PlayerState : MonoBehaviour
     public bool inFreezing2;
     public bool inFreezing3;
     public bool warmedUp;
+    public float lanternTimer;
+    public bool lanternEquipped;
 
     private void Awake()
     {
@@ -101,20 +103,24 @@ public class PlayerState : MonoBehaviour
             currentHunger -= .05f;
         }
         
-        if (currentFreezing < 100 && inFreezing1)
+        if (!lanternEquipped || lanternTimer <= 0)
         {
-            currentFreezing += 1f;
-        }
+            if (currentFreezing < 100 && inFreezing1)
+            {
+                currentFreezing += 1f;
+            }
 
-        if (currentFreezing < 100 && inFreezing2)
-        {
-            currentFreezing += 2.5f;
-        }
+            if (currentFreezing < 100 && inFreezing2)
+            {
+                currentFreezing += 2.5f;
+            }
 
-        if (currentFreezing < 100 && inFreezing3)
-        {
-            currentFreezing += 5f;
+            if (currentFreezing < 100 && inFreezing3)
+            {
+                currentFreezing += 5f;
+            }
         }
+        
 
     }
 
