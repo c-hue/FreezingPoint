@@ -12,9 +12,20 @@ public class GameplaySequence : MonoBehaviour
     [SerializeField] private GameObject losePanel;
     
     private bool hasLost;
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     private void Start()
     {
+        losePanel.SetActive(false);
         AudioManager.Instance?.PlayMusic("GameplayBG");
         StartCoroutine(GameplayIntro());
     }
@@ -49,6 +60,7 @@ public class GameplaySequence : MonoBehaviour
 
     public void LoseGame()
     {
+        Debug.Log("called");
         hasLost = true;
 
         AudioManager.Instance?.StopMusic();
