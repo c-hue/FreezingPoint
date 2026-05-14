@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Slot
+  - QuickSlot
   layers:
   - Default
   - TransparentFX

@@ -117,6 +117,10 @@ MonoBehaviour:
   isTrashable: 0
   thisName: Axe
   thisDescription: Used to Chop Trees
+  thisInstruction: Drag or Right Click to Equip
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0
+  isEquippable: 1
+  isInsideQuickSlot: 0
+  isSelected: 0

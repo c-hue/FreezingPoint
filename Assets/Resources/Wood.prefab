@@ -121,3 +121,6 @@ MonoBehaviour:
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0
+  isEquippable: 0
+  isInsideQuickSlot: 0
+  isSelected: 0

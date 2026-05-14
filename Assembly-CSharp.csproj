@@ -66,6 +66,7 @@
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\TooltipManagerInventory.cs" />
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\InventoryItemData.cs" />
     <Compile Include="Assets\Scripts\Player\MouseMovement.cs" />
+    <Compile Include="Assets\Scripts\Inventory\EquipSystem.cs" />
     <Compile Include="Assets\Art\Supercyan\Scripts\Items\ItemAnimationsObject.cs" />
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\ItemDraggingManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySystem.cs" />

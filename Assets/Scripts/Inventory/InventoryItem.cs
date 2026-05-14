@@ -23,6 +23,12 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public bool isConsumable;
     public float healthEffect;
     public float hungerEffect; 
+
+    // --- Equipping --- //
+    public bool isEquippable;
+    private GameObject itemPendingEquipping;
+    public bool isInsideQuickSlot;
+    public bool isSelected;
  
     private void Start()
     {
@@ -31,6 +37,17 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         itemInfoUI_itemName = itemInfoUI.transform.Find("itemName").GetComponent<TMP_Text>();
         itemInfoUI_itemDescription = itemInfoUI.transform.Find("itemDescription").GetComponent<TMP_Text>();
         itemInfoUI_itemInstruction = itemInfoUI.transform.Find("itemInstruction").GetComponent<TMP_Text>();
+    }
+
+    void Update()
+    {
+        if (isSelected)
+        {
+            gameObject.GetComponent<DragDrop>().enabled = false;
+        } else
+        {
+            gameObject.GetComponent<DragDrop>().enabled = true;
+        }
     }
  
     // Triggered when the mouse enters into the area of the item that has this script.
@@ -60,7 +77,14 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 itemPendingConsumption = gameObject;
                 consumingFunction(healthEffect, hungerEffect);
             }
+            if (isEquippable && isInsideQuickSlot == false && EquipSystem.Instance.CheckIfFull() == false)
+            {
+                EquipSystem.Instance.AddToQuickSlots(gameObject);
+                isInsideQuickSlot = true;
+            }
         }
+
+        
     }
  
     // Triggered when the mouse button is released over the item that has this script.
