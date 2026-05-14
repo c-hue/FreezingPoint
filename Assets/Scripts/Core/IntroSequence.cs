@@ -45,7 +45,7 @@ public class IntroSequence : MonoBehaviour
             "IntroDialogue5",
             0);
         AudioManager.Instance?.PlayOneShot("Turbulence");
-        screenShake.Shake(1.2f, 100f);
+        screenShake.Shake(1.2f, 10f);
         yield return new WaitForSeconds(1.2f);
 
         yield return Say(
@@ -53,7 +53,7 @@ public class IntroSequence : MonoBehaviour
             "IntroDialogue6",
             1);
         AudioManager.Instance?.PlayOneShot("Turbulence");
-        screenShake.Shake(2f, 100f);
+        screenShake.Shake(2f, 10f);
         yield return new WaitForSeconds(1.8f);
 
         yield return Say(
@@ -62,7 +62,7 @@ public class IntroSequence : MonoBehaviour
             0);
 
         AudioManager.Instance?.PlayOneShot("Turbulence");
-        screenShake.Shake(3f, 100f);
+        screenShake.Shake(1f, 10f);
         yield return screenFade.FadeToBlack(1f);
 
         yield return new WaitForSeconds(1f);
