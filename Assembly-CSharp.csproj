@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\Inventory\ItemSlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Art\Rabbits\Demo\Scripts\AnimatorParamatersChange.cs" />
+    <Compile Include="Assets\Scripts\Core\Region.cs" />
     <Compile Include="Assets\Scripts\Core\ScreenShake.cs" />
     <Compile Include="Assets\Scripts\Inventory\DragDrop.cs" />
     <Compile Include="Assets\Art\Supercyan\Scripts\Items\AccessoryLogic.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Assets\Scripts\Core\ReferenceManager.cs" />
     <Compile Include="Assets\Scripts\CraftingSystem.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\RegionSystem.cs" />
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\TooltipManagerInventory.cs" />
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\InventoryItemData.cs" />
     <Compile Include="Assets\Scripts\Core\ScreenFade.cs" />

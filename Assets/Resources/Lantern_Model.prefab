@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8160962758881299335}
   - component: {fileID: 911960261125505407}
   m_Layer: 0
-  m_Name: Camping lantern
+  m_Name: Lantern_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

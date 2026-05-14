@@ -14,12 +14,16 @@ public class PlayerState : MonoBehaviour
     //player hunger
     public float currentHunger;
     public float maxHunger = 150f;
-
+    // player freeze
     public float currentFreezing;
     public float maxFreezing = 100f;
-
     float depletionTimer = 1f;
     float damageTimer = 0f;
+    //regions
+    public bool inFreezing1;
+    public bool inFreezing2;
+    public bool inFreezing3;
+    public bool warmedUp;
 
     private void Awake()
     {
@@ -38,6 +42,9 @@ public class PlayerState : MonoBehaviour
         currentHealth = maxHealth;
         currentHunger = maxHunger;
         currentFreezing = 0;
+        inFreezing1 = false; 
+        inFreezing2 = false; 
+        inFreezing3 = false;
     }
 
     // Update is called once per frame
@@ -64,6 +71,12 @@ public class PlayerState : MonoBehaviour
             damageTimer = 0f;
         }
 
+        if (warmedUp)
+        {
+            currentFreezing = 0;
+            warmedUp = false;
+        }
+
     }
 
     private void DepleteStats()
@@ -77,9 +90,19 @@ public class PlayerState : MonoBehaviour
             currentHunger -= .05f;
         }
         
-        if (currentFreezing < 100)
+        if (currentFreezing < 100 && inFreezing1)
         {
-            currentFreezing += .2f;
+            currentFreezing += 1f;
+        }
+
+        if (currentFreezing < 100 && inFreezing2)
+        {
+            currentFreezing += 2.5f;
+        }
+
+        if (currentFreezing < 100 && inFreezing3)
+        {
+            currentFreezing += 5f;
         }
 
     }
