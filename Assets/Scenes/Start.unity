@@ -214,6 +214,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1567940254}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &222496687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +350,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1567940253}
         m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
         m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1567940254}
+        m_TargetAssemblyTypeName: ButtonSFX, Assembly-CSharp
+        m_MethodName: PlaySFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -562,6 +586,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801260572}
   m_CullTransparentMesh: 1
+--- !u!1 &822173727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822173729}
+  - component: {fileID: 822173728}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &822173728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822173727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd85320bb3a145598faac1de5baaaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  musicSounds:
+  - soundName: TitleScreenBG
+    eventRef:
+      Guid:
+        Data1: -1859398302
+        Data2: 1205724894
+        Data3: 749587883
+        Data4: -30141816
+      Path: event:/BackgroundMusic/TitleScreenBG
+  - soundName: IntroBG
+    eventRef:
+      Guid:
+        Data1: -934418784
+        Data2: 1332653259
+        Data3: 1772536739
+        Data4: 1934829482
+      Path: event:/BackgroundMusic/IntroBG
+  voiceLines:
+  - soundName: IntroDialogue1
+    eventRef:
+      Guid:
+        Data1: 1568097500
+        Data2: 1306672378
+        Data3: 1410170296
+        Data4: -649462632
+      Path: event:/Dialogue/IntroDialogue1
+  - soundName: IntroDialogue2
+    eventRef:
+      Guid:
+        Data1: 566712873
+        Data2: 1289082314
+        Data3: 394311073
+        Data4: -1937667662
+      Path: event:/Dialogue/IntroDialogue2
+  - soundName: IntroDialogue3
+    eventRef:
+      Guid:
+        Data1: -1626131519
+        Data2: 1115506033
+        Data3: -534219876
+        Data4: -1804694185
+      Path: event:/Dialogue/IntroDialogue3
+  - soundName: IntroDialogue4
+    eventRef:
+      Guid:
+        Data1: 950512324
+        Data2: 1249475331
+        Data3: 542490799
+        Data4: 142694024
+      Path: event:/Dialogue/IntroDialogue4
+  - soundName: IntroDialogue5
+    eventRef:
+      Guid:
+        Data1: 243668911
+        Data2: 1201497848
+        Data3: -639426397
+        Data4: -484954959
+      Path: event:/Dialogue/IntroDialogue5
+  - soundName: IntroDialogue6
+    eventRef:
+      Guid:
+        Data1: -1822650696
+        Data2: 1174879011
+        Data3: -1710431863
+        Data4: -534900352
+      Path: event:/Dialogue/IntroDialogue6
+  - soundName: IntroDialogue7
+    eventRef:
+      Guid:
+        Data1: -1130526044
+        Data2: 1090466715
+        Data3: -1828956782
+        Data4: -1727666023
+      Path: event:/Dialogue/IntroDialogue7
+  sfxSounds:
+  - soundName: ButtonClick
+    eventRef:
+      Guid:
+        Data1: -317524709
+        Data2: 1278146661
+        Data3: 315211685
+        Data4: 1462993374
+      Path: event:/SFX/ButtonClick
+  - soundName: IntroSound
+    eventRef:
+      Guid:
+        Data1: -1988690079
+        Data2: 1269212568
+        Data3: 2105657225
+        Data4: 379963127
+      Path: event:/SFX/IntroSound
+  - soundName: Turbulence
+    eventRef:
+      Guid:
+        Data1: 783532784
+        Data2: 1269930171
+        Data3: -82811747
+        Data4: 738847968
+      Path: event:/SFX/IntroTurbulence
+  normalVolume: 1
+  dialogueVolume: 0.35
+--- !u!4 &822173729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822173727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 188.1411, y: 0, z: 2636.4229}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &953069259
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +950,7 @@ GameObject:
   - component: {fileID: 1567940249}
   - component: {fileID: 1567940252}
   - component: {fileID: 1567940253}
+  - component: {fileID: 1567940254}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -918,6 +1088,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f069faf892bd4aae96880eb837474c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenu
+  screenFade: {fileID: 1576043199}
+--- !u!114 &1567940254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567940248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423939705630f42e2b503bea56f1e4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSFX
+--- !u!1 &1576043197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576043198}
+  - component: {fileID: 1576043201}
+  - component: {fileID: 1576043200}
+  - component: {fileID: 1576043199}
+  m_Layer: 5
+  m_Name: ScreenFade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1576043198
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576043197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068889834}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.00010681}
+  m_SizeDelta: {x: 800, y: 450.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1576043199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576043197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c140017b0dea4c03bb7cc23731d6e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenFade
+  fadeImage: {fileID: 1576043200}
+--- !u!114 &1576043200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576043197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1576043201
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576043197}
+  m_CullTransparentMesh: 1
 --- !u!1 &1676163433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1360,7 @@ RectTransform:
   - {fileID: 801260573}
   - {fileID: 222496685}
   - {fileID: 300718720}
+  - {fileID: 1576043198}
   m_Father: {fileID: 469298241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1278,3 +1551,4 @@ SceneRoots:
   - {fileID: 1450217586}
   - {fileID: 469298241}
   - {fileID: 953069262}
+  - {fileID: 822173729}

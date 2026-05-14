@@ -1,0 +1,193 @@
+[LOG] FMOD_System_Create                       : Header version = 2.03.12. Current version = 2.03.12.
+[LOG] system_create                            : Header version = 2.03.12. Current version = 2.03.12.
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] SystemI::init                            : Initialize version=20312 (160365), maxchannels=256, flags=0x00020000
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x3fbf2e208 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
+[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
+[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
+[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = ../FP_Audio/Build/Desktop/BackgroundMusic.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3d69e1c98, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3d69e1c98
+[LOG] SystemI::createSoundInternal             :     Create name='../FP_Audio/Build/Desktop/BackgroundMusic.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1792064
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4416
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x3d69c7548
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TitleScreenWind', format=5, channels=2, frequency=48000, lengthbytes=209504, lengthpcm=913536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3d69e1c98
+[LOG] SoundI::release                          : TitleScreenWind (0x3b783a4d8)
+[LOG] SoundI::release                          :     TitleScreenWind (0x3f095f5f8)
+[LOG] SoundI::release                          :     TitleScreenWind (0x3f095b8f8)
+[LOG] SystemI::createSound                     : filename = ../FP_Audio/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3d69b4ff8, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3d69b4ff8
+[LOG] SystemI::createSoundInternal             :     Create name='../FP_Audio/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 643392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3936
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x3d69f8398
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 111
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ButtonClick', format=5, channels=2, frequency=48000, lengthbytes=7936, lengthpcm=682109, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.989014.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3d69b4ff8
+[LOG] SoundI::release                          : ButtonClick (0x3d69b4ff8)
+[LOG] SoundI::release                          :     ButtonClick (0x3d69b46f8)
+[LOG] SoundI::release                          :     ButtonClick (0x3d69b4878)
+[LOG] SystemI::createSound                     : filename = ../FP_Audio/Build/Desktop/BackgroundMusic.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3b783a4d8, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3b783a4d8
+[LOG] SystemI::createSoundInternal             :     Create name='../FP_Audio/Build/Desktop/BackgroundMusic.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1792064
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4416
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x16b3e3208
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = ../FP_Audio/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              :     index = 0 / 5
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x3b9c4b598, queue head = 0x3b782e3e8, queue count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='IntroBG', format=5, channels=2, frequency=48000, lengthbytes=276128, lengthpcm=1466496, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.899384.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3b783a4d8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3b9c4b598
+[LOG] SystemI::createSoundInternal             :     Create name='../FP_Audio/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 643392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3936
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x16b314a18
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 9000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='IntroSound', format=5, channels=2, frequency=48000, lengthbytes=381664, lengthpcm=1631232, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.949249.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3b9c4b598
+[LOG] SoundI::release                          : TitleScreenWind (0x3d69e1c98)
+[LOG] SoundI::release                          :     TitleScreenWind (0x408ff7338)
+[LOG] SoundI::release                          :     TitleScreenWind (0x408ff74b8)
+[LOG] SoundI::release                          : TitleScreenBG (0x3b7879228)
+[LOG] SoundI::release                          :     TitleScreenBG (0x3f095bc88)
+[LOG] SoundI::release                          :     TitleScreenBG (0x3f095a268)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 988448
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x17795a7d4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x3ed6643a4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x3ed664478
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x3ed6644b4
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x3ed664584
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x176e69008
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='IntroRadioStatic', format=5, channels=2, frequency=48000, lengthbytes=55840, lengthpcm=327168, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.871307.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 988448
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x17795a7d4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x3ed6643a4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x3ed664478
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x3ed6644b4
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x3ed664584
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x176e69008
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='IntroRadioDing', format=5, channels=2, frequency=48000, lengthbytes=3904, lengthpcm=18432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.669922.
+[LOG] SystemI::createSound                     : filename = ../FP_Audio/Build/Desktop/Dialogue.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3d96e8b48, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3d96e8b48
+[LOG] SystemI::createSoundInternal             :     Create name='../FP_Audio/Build/Desktop/Dialogue.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 988448
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 19712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x3d96e9a58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='IntroDialogue1', format=5, channels=2, frequency=48000, lengthbytes=132000, lengthpcm=510336, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.256561.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3d96e8b48
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3d69fc4b8, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3d69fc4b8
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x3d69d0918, queue head = 0x3b782e3e8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3d69fc4b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3d69d0918
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3d69d0918
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::closeInternal                   : Closed.
+[LOG] SoundI::release                          : IntroSound (0x3b9c4b598)
+[LOG] SoundI::release                          :     IntroSound (0x3a5dec5e8)
+[LOG] SoundI::release                          :     IntroSound (0x3d69fc4b8)
+[LOG] SoundI::release                          : IntroDialogue1 (0x3d96e8b48)
+[LOG] SoundI::release                          :     IntroDialogue1 (0x3d96ea528)
+[LOG] SoundI::release                          :     IntroDialogue1 (0x3d96ea6a8)
+[LOG] SoundI::release                          : IntroBG (0x3b783a4d8)
+[LOG] SoundI::release                          :     IntroBG (0x3bdea1068)
+[LOG] SoundI::release                          :     IntroBG (0x3d69d0918)
+[LOG] SoundI::release                          :  (0x176e4cae8)
+[LOG] SoundI::release                          :     IntroRadioStatic (0x176e36f98)
+[LOG] SoundI::release                          :  (0x3f0a05368)
+[LOG] SoundI::release                          :     IntroRadioDing (0x3f0aaf2e8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::closeInternal                   : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
