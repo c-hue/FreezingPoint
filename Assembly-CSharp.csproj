@@ -79,6 +79,7 @@
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\TooltipManagerInventory.cs" />
     <Compile Include="Assets\Art\Simple Inventory System\Scripts\InventoryItemData.cs" />
     <Compile Include="Assets\Scripts\Inventory\LanternItem.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
     <Compile Include="Assets\Scripts\Core\Blueprint.cs" />
     <Compile Include="Assets\Scripts\Core\DayNightCycle.cs" />
     <Compile Include="Assets\Scripts\StatusBar\LanternTimer.cs" />
