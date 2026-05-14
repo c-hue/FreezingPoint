@@ -87,7 +87,7 @@ public class CraftingSystem : MonoBehaviour
 
         // Compass
         CompassReq1 = toolsScreenUI.transform.Find("Compass").transform.Find("req1").GetComponent<TMP_Text>();
-        AxeReq2 = toolsScreenUI.transform.Find("Compass").transform.Find("req2").GetComponent<TMP_Text>();
+        CompassReq2 = toolsScreenUI.transform.Find("Compass").transform.Find("req2").GetComponent<TMP_Text>();
 
         craftCompassBTN = toolsScreenUI.transform.Find("Compass").transform.Find("Button").GetComponent<Button>();
         craftCompassBTN.onClick.AddListener(delegate { CraftAnyItem(CompassBLP); });
@@ -110,7 +110,7 @@ public class CraftingSystem : MonoBehaviour
         CampfireReq1 = baseScreenUI.transform.Find("Campfire").transform.Find("req1").GetComponent<TMP_Text>();
         CampfireReq2 = baseScreenUI.transform.Find("Campfire").transform.Find("req2").GetComponent<TMP_Text>();
 
-        craftCampfireBTN = toolsScreenUI.transform.Find("Campfire").transform.Find("Button").GetComponent<Button>();
+        craftCampfireBTN = baseScreenUI.transform.Find("Campfire").transform.Find("Button").GetComponent<Button>();
         craftCampfireBTN.onClick.AddListener(delegate { CraftAnyItem(CampfireBLP); });
 
     }
@@ -201,6 +201,8 @@ public class CraftingSystem : MonoBehaviour
             craftingScreenUI.SetActive(false);
             toolsScreenUI.SetActive(false);
             resourcesScreenUI.SetActive(false);
+            baseScreenUI.SetActive(false);
+            foodScreenUI.SetActive(false);
             if (!InventorySystem.Instance.isOpen) {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;

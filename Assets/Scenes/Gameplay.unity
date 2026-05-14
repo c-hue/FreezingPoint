@@ -20690,17 +20690,17 @@ MonoBehaviour:
   craftingScreenUI: {fileID: 1900302669}
   toolsScreenUI: {fileID: 1472603919}
   resourcesScreenUI: {fileID: 1827004663}
-  baseScreenUI: {fileID: 0}
-  foodScreenUI: {fileID: 0}
+  baseScreenUI: {fileID: 51828128}
+  foodScreenUI: {fileID: 1825679300}
   chopHolder: {fileID: 650520174}
   inventoryItemList: []
   isOpen: 0
   AxeBLP: {fileID: 11400000, guid: 77ea1873cf0d140249517fa00fd1a846, type: 2}
   StickBLP: {fileID: 11400000, guid: cace8b385690041569147ed24076bbdc, type: 2}
-  CompassBLP: {fileID: 0}
-  CampfireBLP: {fileID: 0}
-  HammerBLP: {fileID: 0}
-  KnifeBLP: {fileID: 0}
+  CompassBLP: {fileID: 11400000, guid: 66611b3f76281314fb8c2fb290081b71, type: 2}
+  CampfireBLP: {fileID: 11400000, guid: e3018d04859131043b83256d55f8647c, type: 2}
+  HammerBLP: {fileID: 11400000, guid: c3c9ad853a6d9c740bc54ab4f2a285a2, type: 2}
+  KnifeBLP: {fileID: 11400000, guid: 7d3dbce457eef354eaf0e3f88e832706, type: 2}
 --- !u!1 &1539215428
 GameObject:
   m_ObjectHideFlags: 0
