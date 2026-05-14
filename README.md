@@ -13,7 +13,8 @@
   <li>E - Open Inventory</li>
   <li>F - Interact with objects</li>
   <li>C - Open Crafting Menu</li>
-  <li>Left Click - </li>
+  <li>Left Click - Hit/Attack </li>
+  <li>Escape - Pause game</li>
 </ul>
 
 <p>See GDD for Asset Attributions and Feature Checklist: https://docs.google.com/document/d/1gCyncvM80TqtPMTpcFreEmwcTPWZwVX7ykPmvaQDTFM/edit?usp=sharing</p>
