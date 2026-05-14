@@ -25,7 +25,7 @@ public class ScreenShake : MonoBehaviour
 
     public IEnumerator ShakeRoutine(float duration, float strength)
     {
-        Debug.Log("shaking");
+        //Debug.Log("shaking");
         float timer = 0f;
 
         while (timer < duration)
@@ -33,7 +33,7 @@ public class ScreenShake : MonoBehaviour
             float x = Random.Range(-1f, 1f) * strength;
             float y = Random.Range(-1f, 1f) * strength;
             rectTransform.anchoredPosition = ogPos + new Vector3(x, y, 0f);
-            Debug.Log(transform.position);
+            //Debug.Log(transform.position);
             
             timer += Time.unscaledDeltaTime;
             yield return null;

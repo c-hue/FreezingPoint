@@ -42,7 +42,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string text, int speakerIndex, Action onComplete = null)
+    public void StartDialogue(string text, string voiceName, int speakerIndex, Action onComplete = null)
     {
         gameObject.SetActive(true);
         currLine = text;
@@ -50,6 +50,9 @@ public class Dialogue : MonoBehaviour
 
         textComponent.text = "";
         speakerText.text = speakers[speakerIndex];
+
+        AudioManager.Instance?.LowerVolume();
+        AudioManager.Instance?.PlayVoiceLine(voiceName);
 
         StartCoroutine(TypeLine());
     }
@@ -70,6 +73,7 @@ public class Dialogue : MonoBehaviour
     void CloseDialogue()
     {
         gameObject.SetActive(false);
+        AudioManager.Instance?.StopVoiceLine();
         onDialogueComplete?.Invoke();
     }
 }

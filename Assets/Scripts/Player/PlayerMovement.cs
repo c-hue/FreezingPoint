@@ -1,3 +1,5 @@
+using FMODUnity;
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
  
     bool isGrounded;
+    private bool isMoving;
     public bool isRunning;
  
     // Update is called once per frame
@@ -31,11 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
          if (Input.GetButton("Sprint"))
         {
-            speed = 24f;
+            speed = 10;
             isRunning = true;
         } else
         {
-            speed = 12f;
+            speed = 7f;
             isRunning = false;
         }
  
@@ -44,14 +47,32 @@ public class PlayerMovement : MonoBehaviour
  
         //right is the red Axis, foward is the blue axis
         Vector3 move = transform.right * x + transform.forward * z;
- 
         controller.Move(move * speed * Time.deltaTime);
- 
+
+        isMoving = move.magnitude > 0.1f && isGrounded;
+
+        // handle footsteps
+        if (!isMoving)
+        {
+            AudioManager.Instance?.StopLoopSFX();
+        } else 
+        {
+            if (isRunning)
+            {
+                AudioManager.Instance?.PlayLoopSFX("Running");
+            }
+            else
+            {
+                AudioManager.Instance?.PlayLoopSFX("Walking");
+            }
+        }
+
         //check if the player is on the ground so he can jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             //the equation for jumping
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            AudioManager.Instance?.PlayOneShot("Jump", this.transform.position);
         }
 
        

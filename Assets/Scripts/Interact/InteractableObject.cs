@@ -36,6 +36,7 @@ public class InteractableObject : MonoBehaviour
             if (!InventorySystem.Instance.CheckIfFull())
             {
                 InventorySystem.Instance.AddToInventory(ItemName);
+                AudioManager.Instance?.PlayOneShot("Pickup", this.transform.position);
                 if (isProceduralResource)
                 {
                     regionManager.OnResourceCollected(region, resourceRule);

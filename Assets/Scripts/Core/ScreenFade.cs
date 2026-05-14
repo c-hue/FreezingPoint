@@ -4,15 +4,17 @@ using UnityEngine.UI;
 
 public class ScreenFade : MonoBehaviour
 {
-    [SerializeField]  Image fadeImage;
+    [SerializeField] Image fadeImage;
 
     void Awake()
     {
-        SetAlpha(1f); // start black
+        fadeImage.gameObject.SetActive(false); // start inactive
     }
 
     public IEnumerator FadeIn(float duration)
     {
+        SetAlpha(1f);
+        fadeImage.gameObject.SetActive(true);
         float timer = 0f;
 
         while (timer < duration)
@@ -24,10 +26,13 @@ public class ScreenFade : MonoBehaviour
             yield return null;
         }
         SetAlpha(0f);
+        fadeImage.gameObject.SetActive(false);
     }
 
     public IEnumerator FadeToBlack(float duration)
     {
+        SetAlpha(0f);
+        fadeImage.gameObject.SetActive(true);
         float timer = 0f;
         while (timer < duration)
         {
@@ -37,7 +42,6 @@ public class ScreenFade : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-
         SetAlpha(1f);
     }
 
