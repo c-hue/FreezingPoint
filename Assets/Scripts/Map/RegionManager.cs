@@ -52,9 +52,9 @@ public class RegionManager : MonoBehaviour
 
     void SpawnResource(RegionDefinition region, ResourceSpawnRule rule)
     {
-        Debug.Log("spawning " + rule.resourceID);
         for (int attempt = 0; attempt < maxSpawnAttempts; attempt++)
         {
+            Debug.Log("spawning " + rule + rule.resourceID + " for " + region.regionName);
             Vector3 pos = GetRandomPoint(region);
             pos = PlaceOnTerrain(pos);
 
@@ -65,7 +65,9 @@ public class RegionManager : MonoBehaviour
             GameObject prefab = rule.prefabs[Random.Range(0,rule.prefabs.Count)];
             GameObject obj = Instantiate(prefab, pos, rotation, resourceContainer);
             
+            Debug.Log(prefab);
             InteractableObject interactable = obj.GetComponent<InteractableObject>();
+            Debug.Log(interactable);
             interactable.SetupProceduralResource(this, region, rule);
             string key = GetResourceKey(region, rule);
             activeResourceCounts[key]++;
