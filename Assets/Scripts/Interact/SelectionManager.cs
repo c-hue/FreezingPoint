@@ -66,13 +66,7 @@ public class SelectionManager : MonoBehaviour
                 interaction_text.text = selectionTransform.GetComponent<InteractableObject>().GetItemName();
                 interaction_Info_UI.SetActive(true);
             }
-            else 
-            { 
-                onTarget = false;
-                interaction_Info_UI.SetActive(false);
-            }
-
-            if (Crate.Instance.playerInRange && !choppableTree && !CraftingSystem.Instance.isOpen && !InventorySystem.Instance.isOpen)
+            else if (Crate.Instance.playerInRange && !choppableTree && !CraftingSystem.Instance.isOpen && !InventorySystem.Instance.isOpen)
             {
                 onTarget = true;
                 interaction_text.text = Crate.Instance.GiveUIText();
