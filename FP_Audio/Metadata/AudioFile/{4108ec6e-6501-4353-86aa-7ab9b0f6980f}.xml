@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{4108ec6e-6501-4353-86aa-7ab9b0f6980f}">
+		<property name="assetPath">
+			<value>GameplayShivering.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.592000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bc4cb20f-227e-4af8-aad5-9b6a122861a5}</destination>
+		</relationship>
+	</object>
+</objects>

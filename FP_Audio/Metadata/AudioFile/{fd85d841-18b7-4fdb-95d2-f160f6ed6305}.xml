@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{fd85d841-18b7-4fdb-95d2-f160f6ed6305}">
+		<property name="assetPath">
+			<value>IntroRadioDing.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.38400000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bc4cb20f-227e-4af8-aad5-9b6a122861a5}</destination>
+		</relationship>
+	</object>
+</objects>

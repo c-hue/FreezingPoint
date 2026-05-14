@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{35ca0a44-6925-4ba5-9bcb-44917237cab5}">
+		<property name="assetPath">
+			<value>GameplayDialogue04.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.256</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bc4cb20f-227e-4af8-aad5-9b6a122861a5}</destination>
+		</relationship>
+	</object>
+</objects>
