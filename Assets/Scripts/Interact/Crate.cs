@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Crate : MonoBehaviour
 {
     public static Crate Instance { get; set; }
-    private bool playerInRange;
+    public bool playerInRange;
     public GameObject crateScreenUI;
     public bool isOpen;
     public List<GameObject> crateList = new List<GameObject>();
@@ -40,6 +40,10 @@ public class Crate : MonoBehaviour
                 CloseCrate();
             }
         }
+    }
+    public string GiveUIText()
+    {
+        return "Press F to Open";
     }
     private void PopulateCrateSlots()
     {
