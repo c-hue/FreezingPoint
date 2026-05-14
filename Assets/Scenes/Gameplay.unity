@@ -3226,7 +3226,7 @@ MonoBehaviour:
   m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
-  m_sharedMaterial: {fileID: 2716747818870992414, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
+  m_sharedMaterial: {fileID: -7340486504185274738, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12581,8 +12581,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
+  m_sharedMaterial: {fileID: -7340486504185274738, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19421,6 +19421,20 @@ MonoBehaviour:
       respawnTime: 30
       radius: 2
       randomRotation: 1
+    - resourceID: Mushroom
+      prefabs:
+      - {fileID: 3326447405427942746, guid: b1d99251e8d87614cad5a89807b5f6fc, type: 3}
+      maxCount: 8
+      respawnTime: 20
+      radius: 5
+      randomRotation: 1
+    - resourceID: Berry
+      prefabs:
+      - {fileID: 1375842427720071884, guid: 2c6cd588227d90142b95fb9208f94da9, type: 3}
+      maxCount: 8
+      respawnTime: 20
+      radius: 5
+      randomRotation: 1
   - regionName: Middle
     innerRadius: 153
     outerRadius: 300
@@ -19477,6 +19491,23 @@ MonoBehaviour:
       - {fileID: 7192031583750588731, guid: b48ca86e895124304a2f1e6a9fef230d, type: 3}
       maxCount: 10
       respawnTime: 30
+      radius: 2
+      randomRotation: 1
+    - resourceID: Berry
+      prefabs:
+      - {fileID: 1375842427720071884, guid: 2c6cd588227d90142b95fb9208f94da9, type: 3}
+      - {fileID: 887329845374595215, guid: 1b13ffacc787b4e30b5c56b1b51d2333, type: 3}
+      maxCount: 15
+      respawnTime: 20
+      radius: 2
+      randomRotation: 1
+    - resourceID: Mushroom
+      prefabs:
+      - {fileID: 3326447405427942746, guid: b1d99251e8d87614cad5a89807b5f6fc, type: 3}
+      - {fileID: 3326447405427942746, guid: ce8cb34d6879a4ec2b14c841aaba4796, type: 3}
+      - {fileID: 3326447405427942746, guid: 1fdff98aa52334a47ac2b3090f4ee60e, type: 3}
+      maxCount: 15
+      respawnTime: 20
       radius: 2
       randomRotation: 1
   - regionName: Far
@@ -20142,7 +20173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322997166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27642,7 +27673,7 @@ MonoBehaviour:
   m_text: GAME PAUSED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
-  m_sharedMaterial: {fileID: 2716747818870992414, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
+  m_sharedMaterial: {fileID: -7340486504185274738, guid: ea63f035752cc4c3da166fdef05e15d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

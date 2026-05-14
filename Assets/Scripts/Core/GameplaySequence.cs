@@ -4,13 +4,28 @@ using UnityEngine.SceneManagement;
 
 public class GameplaySequence : MonoBehaviour
 {
+    public static GameplaySequence Instance { get; private set; }
+
     [Header("References")]
     [SerializeField] private Dialogue dialogue;
-    //[SerializeField] private ScreenShake cameraShake;
     [SerializeField] private ScreenFade screenFade;
+    [SerializeField] private GameObject losePanel;
+    
+    private bool hasLost;
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     private void Start()
     {
+        losePanel.SetActive(false);
         AudioManager.Instance?.PlayMusic("GameplayBG");
         StartCoroutine(GameplayIntro());
     }
@@ -41,5 +56,17 @@ public class GameplaySequence : MonoBehaviour
         });
 
         yield return new WaitUntil(() => done);
+    }
+
+    public void LoseGame()
+    {
+        Debug.Log("called");
+        hasLost = true;
+
+        AudioManager.Instance?.StopMusic();
+        AudioManager.Instance?.StopVoiceLine();
+
+        Time.timeScale = 0f;
+        losePanel.SetActive(true);
     }
 }

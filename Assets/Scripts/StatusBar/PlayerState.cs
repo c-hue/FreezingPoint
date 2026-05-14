@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class PlayerState : MonoBehaviour
 {
+    //[SerializeField] private ScreenShake cameraShake;
+
     public static PlayerState Instance { get; set;}
     public PlayerMovement playerMovement;
     //player health
     public float currentHealth;
     public float maxHealth = 100f;
+    public bool isDead;
 
     //player hunger
     public float currentHunger;
@@ -47,11 +50,13 @@ public class PlayerState : MonoBehaviour
         inFreezing1 = false; 
         inFreezing2 = false; 
         inFreezing3 = false;
+        isDead = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(currentHealth);
         depletionTimer += Time.deltaTime;
 
         if (depletionTimer >= 1f)
@@ -79,16 +84,12 @@ public class PlayerState : MonoBehaviour
             warmedUp = false;
         }
 
-        if (lanternEquipped && RegionSystem.Instance.region1Enter)
+        if (currentHealth <= 0 && !isDead)
         {
-            lanternTimer = 120f;
+            isDead = true;
+            Debug.Log("die");
+            GameplaySequence.Instance?.LoseGame();
         }
-
-        if (lanternEquipped && !RegionSystem.Instance.region1Enter && lanternTimer > 0)
-        {
-            lanternTimer -= Time.deltaTime;
-        }
-
     }
 
     private void DepleteStats()
