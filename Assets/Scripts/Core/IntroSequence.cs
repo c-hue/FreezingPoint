@@ -67,7 +67,7 @@ public class IntroSequence : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Gameplay 1");
     }
 
     private IEnumerator Say(string text, string voiceName, int speakerIndex)

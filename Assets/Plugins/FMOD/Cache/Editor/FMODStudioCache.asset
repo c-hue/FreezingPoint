@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FP_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639143081299586631
+  lastModified: 639143230239670174
   FileSizes:
   - Name: Desktop
-    Value: 1610
+    Value: 1752
   Exists: 1
 --- !u!114 &-8157977219596968247
 MonoBehaviour:
@@ -74,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8352
+--- !u!114 &-7653888245428289494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Jump
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Jump
+  Guid:
+    Data1: 902451874
+    Data2: 1296280278
+    Data3: -1868381543
+    Data4: 1675330114
+  Banks:
+  - {fileID: -5941582955538483624}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-7533232304088477530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,11 +170,38 @@ MonoBehaviour:
   Path: ../FP_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639143081301214602
+  lastModified: 639143238902613771
   FileSizes:
   - Name: Desktop
-    Value: 747968
+    Value: 801024
   Exists: 1
+--- !u!114 &-5347206614798784122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Walking
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Walking
+  Guid:
+    Data1: -799001786
+    Data2: 1120062772
+    Data3: 500815283
+    Data4: -2060307950
+  Banks:
+  - {fileID: -5941582955538483624}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8097
 --- !u!114 &-5015922549721940414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +283,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 95726
+--- !u!114 &-4093134028083526280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Running
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Running
+  Guid:
+    Data1: 768253780
+    Data2: 1231111439
+    Data3: 1905803139
+    Data4: 1300745895
+  Banks:
+  - {fileID: -5941582955538483624}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6809
 --- !u!114 &-3008431418696223262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +337,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 135706
+--- !u!114 &-2955025062527906614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Hit
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Hit
+  Guid:
+    Data1: 1479779148
+    Data2: 1188310522
+    Data3: 2077019827
+    Data4: 1503373322
+  Banks:
+  - {fileID: -5941582955538483624}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,14 +399,18 @@ MonoBehaviour:
   - {fileID: 884619587001410882}
   - {fileID: 428415960848181343}
   - {fileID: -8157977219596968247}
-  - {fileID: 3276861840217704443}
+  - {fileID: -2955025062527906614}
+  - {fileID: -7653888245428289494}
+  - {fileID: -5347206614798784122}
+  - {fileID: -4093134028083526280}
+  - {fileID: 4472369668293912981}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2141192244505516375}
   StringsBanks:
   - {fileID: -8704792918520494703}
   cacheVersion: 131858
-  cacheTime: 639143081301214602
+  cacheTime: 639143239157075474
   SerializableEventsDict:
   - key: event:/BackgroundMusic/TitleScreenBG
     index: 0
@@ -332,8 +444,16 @@ MonoBehaviour:
     index: 14
   - key: event:/Dialogue/GameplayDialogue1
     index: 15
-  - key: event:/SFX/Footsteps
+  - key: event:/SFX/Hit
     index: 16
+  - key: event:/SFX/Jump
+    index: 17
+  - key: event:/SFX/Walking
+    index: 18
+  - key: event:/SFX/Running
+    index: 19
+  - key: event:/SFX/Pickup
+    index: 20
 --- !u!114 &272646538239040851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +550,7 @@ MonoBehaviour:
   Path: ../FP_Audio/Build/Desktop/BackgroundMusic.bank
   Name: BackgroundMusic
   StudioPath: bank:/BackgroundMusic
-  lastModified: 639143081297015982
+  lastModified: 639143239157075474
   FileSizes:
   - Name: Desktop
     Value: 3037120
@@ -504,12 +624,12 @@ MonoBehaviour:
   Path: ../FP_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639143081299582886
+  lastModified: 639143230239663580
   FileSizes:
   - Name: Desktop
     Value: 1074
   Exists: 1
---- !u!114 &3276861840217704443
+--- !u!114 &4472369668293912981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,14 +639,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Footsteps
+  m_Name: event:/SFX/Pickup
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/Footsteps
+  Path: event:/SFX/Pickup
   Guid:
-    Data1: -799001786
-    Data2: 1120062772
-    Data3: 500815283
-    Data4: -2060307950
+    Data1: 1342202772
+    Data2: 1231227164
+    Data3: -867164259
+    Data4: -1661791030
   Banks:
   - {fileID: -5941582955538483624}
   IsStream: 0
@@ -535,7 +655,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8097
+  Length: 522
 --- !u!114 &5554103518767609504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,7 +752,7 @@ MonoBehaviour:
   Path: ../FP_Audio/Build/Desktop/Dialogue.bank
   Name: Dialogue
   StudioPath: bank:/Dialogue
-  lastModified: 639143081299509027
+  lastModified: 639143234885778318
   FileSizes:
   - Name: Desktop
     Value: 1386784

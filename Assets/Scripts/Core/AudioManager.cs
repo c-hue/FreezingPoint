@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
 
     private EventInstance currentMusic;
     private EventInstance currentVoice;
+    private EventInstance currentLoopSFX;
 
     void Awake()
     {
@@ -44,6 +45,33 @@ public class AudioManager : MonoBehaviour
         SoundEntry s = Array.Find(sfxSounds, x => x.soundName == sound);
         if (s == null) return;
         RuntimeManager.PlayOneShot(s.eventRef);
+    }
+
+    public void PlayLoopSFX(string sound)
+    {
+        if (currentLoopSFX.isValid())
+        {
+            PLAYBACK_STATE state;
+            currentLoopSFX.getPlaybackState(out state);
+
+            if (state == PLAYBACK_STATE.PLAYING)
+                return;
+        }
+        SoundEntry s = Array.Find(sfxSounds, x => x.soundName == sound);
+        if (s == null) return;
+
+        StopLoopSFX();
+        currentLoopSFX = RuntimeManager.CreateInstance(s.eventRef);
+        currentLoopSFX.start();
+    }
+
+    public void StopLoopSFX()
+    {
+        if (currentLoopSFX.isValid())
+        {
+            currentLoopSFX.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            currentLoopSFX.release();
+        }
     }
 
     // --- MUSIC ------------------------------------------------

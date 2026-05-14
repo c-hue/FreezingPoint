@@ -632,6 +632,14 @@ MonoBehaviour:
         Data3: 1772536739
         Data4: 1934829482
       Path: event:/BackgroundMusic/IntroBG
+  - soundName: GameplayBG
+    eventRef:
+      Guid:
+        Data1: -338134551
+        Data2: 1189677520
+        Data3: -2113255016
+        Data4: -1920526108
+      Path: event:/BackgroundMusic/GameplayBG
   voiceLines:
   - soundName: IntroDialogue1
     eventRef:
@@ -689,6 +697,30 @@ MonoBehaviour:
         Data3: -1828956782
         Data4: -1727666023
       Path: event:/Dialogue/IntroDialogue7
+  - soundName: GameplayDialogue1
+    eventRef:
+      Guid:
+        Data1: -375108676
+        Data2: 1080912909
+        Data3: 1600838025
+        Data4: 579874504
+      Path: event:/Dialogue/GameplayDialogue1
+  - soundName: GameplayDialogue2
+    eventRef:
+      Guid:
+        Data1: -1654940899
+        Data2: 1172999569
+        Data3: 1254325426
+        Data4: 618701914
+      Path: event:/Dialogue/GameplayDialogue2
+  - soundName: GameplayDialogue3
+    eventRef:
+      Guid:
+        Data1: -1535757461
+        Data2: 1153557604
+        Data3: 1229758592
+        Data4: -715288438
+      Path: event:/Dialogue/GameplayDialogue3
   sfxSounds:
   - soundName: ButtonClick
     eventRef:
@@ -714,6 +746,46 @@ MonoBehaviour:
         Data3: -82811747
         Data4: 738847968
       Path: event:/SFX/IntroTurbulence
+  - soundName: Walking
+    eventRef:
+      Guid:
+        Data1: -799001786
+        Data2: 1120062772
+        Data3: 500815283
+        Data4: -2060307950
+      Path: event:/SFX/Walking
+  - soundName: Running
+    eventRef:
+      Guid:
+        Data1: 768253780
+        Data2: 1231111439
+        Data3: 1905803139
+        Data4: 1300745895
+      Path: event:/SFX/Running
+  - soundName: Jump
+    eventRef:
+      Guid:
+        Data1: 902451874
+        Data2: 1296280278
+        Data3: -1868381543
+        Data4: 1675330114
+      Path: event:/SFX/Jump
+  - soundName: Hit
+    eventRef:
+      Guid:
+        Data1: 1479779148
+        Data2: 1188310522
+        Data3: 2077019827
+        Data4: 1503373322
+      Path: event:/SFX/Hit
+  - soundName: Pickup
+    eventRef:
+      Guid:
+        Data1: 1342202772
+        Data2: 1231227164
+        Data3: -867164259
+        Data4: -1661791030
+      Path: event:/SFX/Pickup
   normalVolume: 1
   dialogueVolume: 0.35
 --- !u!4 &822173729

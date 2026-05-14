@@ -73,6 +73,7 @@ public class Dialogue : MonoBehaviour
     void CloseDialogue()
     {
         gameObject.SetActive(false);
+        AudioManager.Instance?.StopVoiceLine();
         onDialogueComplete?.Invoke();
     }
 }
