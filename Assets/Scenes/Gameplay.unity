@@ -12345,7 +12345,6 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 100
   isDead: 0
-  isDead: 0
   currentHunger: 0
   maxHunger: 150
   currentFreezing: 0
@@ -18319,7 +18318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1084370880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27758,7 +27757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1948179109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29214,6 +29213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameplaySequence
   dialogue: {fileID: 1217638379}
   screenFade: {fileID: 1322997167}
+  losePanel: {fileID: 1084370879}
 --- !u!4 &2120832779
 Transform:
   m_ObjectHideFlags: 0
